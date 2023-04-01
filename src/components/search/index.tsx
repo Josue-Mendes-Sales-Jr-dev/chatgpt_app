@@ -5,11 +5,10 @@ import { useState, useEffect } from "react";
 
 interface ISearchProps{
     search:string;
-    setSearch:string;
+    setSearch:string[];
     handleSubmit:()=>void;
     setText:string;
     text:string;
-    children:React.ReactNode;
     tipo:boolean;
     block:boolean;
 

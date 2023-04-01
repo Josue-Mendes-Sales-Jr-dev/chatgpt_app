@@ -18,7 +18,9 @@ export default function Home() {
       <C.Container>
         <C.Box>
           <Header/>
-          <Search/>
+          <Search search={''} setSearch={[]} handleSubmit={function (): void {
+            throw new Error('Function not implemented.')
+          } } setText={''} text={''} tipo={false} block={false}/>
         </C.Box>
       </C.Container>
     </>
