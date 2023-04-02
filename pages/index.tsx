@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import { Search } from '@/src/components/search'
 import { Header } from '@/src/components/header'
 import * as C from './styled_td'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (

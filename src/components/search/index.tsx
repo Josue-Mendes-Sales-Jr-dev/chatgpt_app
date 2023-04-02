@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Content } from "../content/index"
 import * as A from "./styled"
 import { useState, useEffect } from "react";
 
@@ -13,7 +12,7 @@ interface ISearchProps{
     block:boolean;
 
 }
-const api_key="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"
+const api_key="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"
 
 
 export const Search:React.FC<ISearchProps>=()=>{
@@ -56,16 +55,15 @@ export const Search:React.FC<ISearchProps>=()=>{
     
     return(
         <>
-        <Content>
+        <A.Content>
             <>
             <ul>
                { text.map((text,index)=>(
                 <li className="my-message" key={index}> {text}  </li>
                ))}
             </ul>
-            
             </>
-        </Content>
+        </A.Content>
         <A.Container onSubmit={handleSubmit}>
             <A.InputSearch value={search} tipo={search===''? true: false}  onChange={(e)=>setSearch(e.target.value)} placeholder="Digite sua mensagem"/>
             <A.InputBtn disabled={search===''? true: false } block={search===''? true: false } value="Enviar"/>
